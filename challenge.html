@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeuroMM 2026 Grand Challenge details">
+  <meta property="og:image" content="./img/mer2024-2.jpg">
+  <meta property="og:type" content="website">
+
+  <title>NeuroMM Grand Challenge 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top neuromm-navbar navbar-default">
+    <div class="container">
+      <a class="navbar-brand neuromm-brand page-scroll" href="#page-top">NeuroMM 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link page-scroll" href="#intro">Intro</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#dataset">Dataset</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#metrics">Evaluation</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#organizers">Organizers</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-outline-primary" href="./index.html">Workshop Home</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button id="themeToggle" class="btn btn-sm btn-outline-primary theme-toggle" type="button" aria-label="Toggle dark and light mode">Dark Mode</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section d-flex align-items-center">
+    <div class="container text-center hero-content">
+      <p class="hero-kicker mb-3">ACM Multimedia 2026 Grand Challenge</p>
+      <h1 class="display-5 fw-bold mb-2">NeuroMM Grand Challenge</h1>
+      <h2 class="hero-title mb-4">Interictal Epileptiform Discharge Detection and Localization in Multimodal Neuro-Signals</h2>
+      <p class="hero-subtitle mx-auto mb-4">
+        A clinically grounded benchmark for multimodal neuro-intelligence with robust detection, context-aware reasoning, and epileptogenic source localization.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#dataset" class="btn btn-lg hero-btn-primary">Dataset</a>
+        <a href="#metrics" class="btn btn-lg hero-btn-secondary">Evaluation Metrics</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="intro" class="section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Intro</h2>
+        <p class="section-lead">A unified challenge for clinically meaningful multimodal neuro-signal reasoning.</p>
+      </div>
+      <div class="conference-panel">
+        <p class="text-muted mb-3">
+          Epilepsy remains a high-impact testbed for trustworthy AI, where Interictal Epileptiform Discharges (IEDs) are critical biomarkers for diagnosis and localization. Existing methods are often EEG-only and do not fully exploit multimodal context, leading to limited robustness under class imbalance, biological variability, and real-world noise.
+        </p>
+        <p class="text-muted mb-3">
+          NeuroMM 2026 addresses this gap by introducing a multimodal challenge framework that integrates physiological signals with synchronized contextual information. The challenge is designed to advance robust multimodal perception, cross-modal reasoning, and clinically actionable inference.
+        </p>
+        <p class="text-muted mb-0">
+          The challenge includes three official tracks: NMM-Basic-IED, NMM-Context-IED, and NMM-Source-IED, covering detection, context-aware robustness, and spatial localization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="dataset" class="section-space section-muted">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Dataset</h2>
+        <p class="section-lead">vEpiSet: hospital-scale multimodal benchmark for reproducible research.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="conference-panel h-100">
+            <h3 class="panel-title">Data Overview</h3>
+            <ul class="topic-list mb-0">
+              <li>84 subjects total: 52 epilepsy patients and 32 normal-control subjects.</li>
+              <li>20 minutes continuous recording per subject; approximately 28 hours total.</li>
+              <li>Signals include EEG, ECG, and EMG acquired under standardized clinical protocol.</li>
+              <li>4-second segmentation protocol yielding 25,449 epochs in total.</li>
+              <li>Expert-reviewed multi-stage labeling with consensus verification.</li>
+              <li>IED subtypes for localization: generalized, frontal, temporal, occipital, centro-parietal.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="conference-panel h-100">
+            <h3 class="panel-title">Epoch Statistics</h3>
+            <table class="table align-middle mb-0 challenge-table">
+              <thead>
+                <tr>
+                  <th scope="col">State</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">IED</th>
+                  <th scope="col">Non-IED</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Wake</td><td>11,906</td><td>764</td><td>11,142</td></tr>
+                <tr><td>Sleep</td><td>13,543</td><td>1,752</td><td>11,791</td></tr>
+                <tr><td>Total</td><td>25,449</td><td>2,516</td><td>22,933</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metrics" class="section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Evaluation Metrics</h2>
+        <p class="section-lead">Task-specific and clinically motivated metrics.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="conference-panel h-100">
+            <h3 class="panel-title">NMM-Basic-IED</h3>
+            <ul class="topic-list mb-0">
+              <li>Primary metric: AUPRC</li>
+              <li>Auxiliary metric: Precision@Sensitivity=70%</li>
+              <li>Focus: robust binary IED detection under severe class imbalance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="conference-panel h-100">
+            <h3 class="panel-title">NMM-Context-IED</h3>
+            <ul class="topic-list mb-0">
+              <li>Primary metric: AUPRC</li>
+              <li>Auxiliary metric: Precision@Sensitivity=70%</li>
+              <li>Focus: artifact suppression with synchronized visual context features</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="conference-panel h-100">
+            <h3 class="panel-title">NMM-Source-IED</h3>
+            <ul class="topic-list mb-0">
+              <li>Primary metric: Weighted-F1</li>
+              <li>Auxiliary metric: Macro-F1</li>
+              <li>Focus: 5-class localization of epileptogenic regions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section-space section-muted schedule-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Schedule</h2>
+        <p class="section-lead">Official timeline for NeuroMM Grand Challenge 2026.</p>
+      </div>
+      <div class="conference-panel p-0 overflow-hidden">
+        <table class="table table-hover mb-0 challenge-table">
+          <thead>
+            <tr>
+              <th scope="col" class="w-25">Date</th>
+              <th scope="col">Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Apr 20, 2026</td><td>Data, baseline paper and code available</td></tr>
+            <tr><td>Jun 20, 2026</td><td>Result submission start</td></tr>
+            <tr><td>Jul 1, 2026</td><td>Result submission deadline</td></tr>
+            <tr><td>Jul 12, 2026</td><td>Paper submission deadline</td></tr>
+            <tr><td>Aug 5, 2026</td><td>Paper acceptance notification</td></tr>
+            <tr><td>Aug 19, 2026</td><td>Camera-ready deadline</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="organizers" class="section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Organizer</h2>
+      </div>
+      <div class="conference-panel">
+        <div class="row g-4 committee-grid">
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Qi%20Tian.jpg" class="member-img" alt="Qi Tian"><h6 class="member-name mt-3"><a href="">Qi Tian</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Laizhong%20Cui.jpg" class="member-img" alt="Laizhong Cui"><h6 class="member-name mt-3"><a href="">Laizhong Cui</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Fei%20Ma.jpg" class="member-img" alt="Fei Ma"><h6 class="member-name mt-3"><a href="">Fei Ma</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Zitong%20Yu.jpeg" class="member-img" alt="Zitong Yu"><h6 class="member-name mt-3"><a href="">Zitong Yu</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Zebang%20Cheng.jpg" class="member-img" alt="Zebang Cheng"><h6 class="member-name mt-3"><a href="">Zebang Cheng</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Haibo%20He.jpg" class="member-img" alt="Haibo He"><h6 class="member-name mt-3"><a href="">Haibo He</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Philippe%20Fournier-Viger.jpg" class="member-img" alt="Philippe Fournier-Viger"><h6 class="member-name mt-3"><a href="">Philippe Fournier-Viger</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Zheng%20Lian.jpg" class="member-img" alt="Zheng Lian"><h6 class="member-name mt-3"><a href="">Zheng Lian</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Nan%20Lin.jpg" class="member-img" alt="Nan Lin"><h6 class="member-name mt-3"><a href="">Nan Lin</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Yisu%20Dong.jpg" class="member-img" alt="Yisu Dong"><h6 class="member-name mt-3"><a href="">Yisu Dong</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Lian%20Li.jpg" class="member-img" alt="Lian Li"><h6 class="member-name mt-3"><a href="">Lian Li</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Peng%20Hu.jpg" class="member-img" alt="Peng Hu"><h6 class="member-name mt-3"><a href="">Peng Hu</a></h6></div>
+          <div class="col-6 col-md-4 col-lg-3 text-center member-card"><img src="./img/Zi%20Liang.jpg" class="member-img" alt="Zi Liang"><h6 class="member-name mt-3"><a href="">Zi Liang</a></h6></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center text-muted">
+    © 2026 NeuroMM Grand Challenge
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      var key = "neuromm-theme";
+      var root = document.documentElement;
+      var button = document.getElementById("themeToggle");
+      var nav = document.querySelector(".neuromm-navbar");
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll("#mainNav .nav-link.page-scroll"));
+      var sections = navLinks
+        .map(function (link) {
+          var id = link.getAttribute("href");
+          if (!id || id.charAt(0) !== "#") return null;
+          return document.querySelector(id);
+        })
+        .filter(Boolean);
+
+      function applyTheme(theme) {
+        root.setAttribute("data-bs-theme", theme);
+        if (button) {
+          button.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
+        }
+      }
+
+      function setActiveLink(id) {
+        navLinks.forEach(function (link) {
+          var active = link.getAttribute("href") === "#" + id;
+          link.classList.toggle("active", active);
+          if (active) {
+            link.setAttribute("aria-current", "page");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+      }
+
+      function updateNavbarState() {
+        if (!nav) return;
+        var shouldShrink = window.innerWidth >= 768 && window.scrollY > 40;
+        nav.classList.toggle("navbar-shrink", shouldShrink);
+      }
+
+      function initSectionSpy() {
+        if (!sections.length) return;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                setActiveLink(entry.target.id);
+              }
+            });
+          },
+          {
+            root: null,
+            rootMargin: "-40% 0px -50% 0px",
+            threshold: 0.01
+          }
+        );
+        sections.forEach(function (section) {
+          observer.observe(section);
+        });
+      }
+
+      var saved = localStorage.getItem(key);
+      var initial = saved === "dark" || saved === "light" ? saved : "light";
+      applyTheme(initial);
+      updateNavbarState();
+      initSectionSpy();
+
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = root.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+          localStorage.setItem(key, next);
+          applyTheme(next);
+        });
+      }
+
+      window.addEventListener("scroll", updateNavbarState);
+      window.addEventListener("resize", updateNavbarState);
+    })();
+  </script>
+</body>
+</html>
