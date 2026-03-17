@@ -28,8 +28,10 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link page-scroll" href="#intro">Intro</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#prizes">Prizes</a></li>
           <li class="nav-item"><a class="nav-link page-scroll" href="#dataset">Dataset</a></li>
-          <li class="nav-item"><a class="nav-link page-scroll" href="#metrics">Evaluation</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#registration">Registration</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#baseline">Baseline</a></li>
           <li class="nav-item"><a class="nav-link page-scroll" href="#schedule">Schedule</a></li>
           <li class="nav-item"><a class="nav-link page-scroll" href="#organizers">Organizers</a></li>
           <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-outline-primary" href="./index.html">Workshop Home</a></li>
@@ -51,7 +53,7 @@
       </p>
       <div class="d-flex flex-wrap justify-content-center gap-3">
         <a href="#dataset" class="btn btn-lg hero-btn-primary">Dataset</a>
-        <a href="#metrics" class="btn btn-lg hero-btn-secondary">Evaluation Metrics</a>
+        <a href="#baseline" class="btn btn-lg hero-btn-secondary">Baseline</a>
       </div>
     </div>
   </header>
@@ -76,11 +78,28 @@
     </div>
   </section>
 
+  <section id="prizes" class="section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Prizes &amp; Awards</h2>
+        <p class="section-lead">Publication and award policy for all challenge tracks.</p>
+      </div>
+      <div class="conference-panel">
+        <ul class="topic-list mb-0">
+          <li>The first-place paper of each track will be recommended to the ACM MM main conference proceedings.</li>
+          <li>Other ranked teams are also welcome to prepare papers and submit to the NeuroMM 2026 workshop.</li>
+          <li>Grand Challenge papers will be included in the main conference proceedings.</li>
+          <li>At least one main-conference full registration is required for each accepted paper.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="dataset" class="section-space section-muted">
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="section-heading">Dataset</h2>
-        <p class="section-lead">vEpiSet: hospital-scale multimodal benchmark for reproducible research.</p>
+        <p class="section-lead">The challenge dataset is sourced from <strong>vEpiSet</strong> <a href="#ref-1">[1]</a>.</p>
       </div>
       <div class="row g-4">
         <div class="col-lg-7">
@@ -117,46 +136,146 @@
           </div>
         </div>
       </div>
+
+      <div class="conference-panel mt-4">
+        <h3 class="panel-title">Dataset Preview</h3>
+        <div id="datasetCarousel" class="carousel slide dataset-carousel" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/challenge/data_collection_step1.jpg" class="dataset-carousel-img d-block w-100" alt="Data collection step 1">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Data collection process: Step 1</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/data_collection_step2.jpg" class="dataset-carousel-img d-block w-100" alt="Data collection step 2">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Data collection process: Step 2</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/sample1.png" class="dataset-carousel-img d-block w-100" alt="Dataset sample case 1">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Sample case 1</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/sample2.png" class="dataset-carousel-img d-block w-100" alt="Dataset sample case 2">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Sample case 2</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/sample3.png" class="dataset-carousel-img d-block w-100" alt="Dataset sample case 3">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Sample case 3</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/sample4.png" class="dataset-carousel-img d-block w-100" alt="Dataset sample case 4">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Sample case 4</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/sample5.png" class="dataset-carousel-img d-block w-100" alt="Dataset sample case 5">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Sample case 5</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/challenge/sample6.png" class="dataset-carousel-img d-block w-100" alt="Dataset sample case 6">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="dataset-caption mb-0">Sample case 6</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#datasetCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#datasetCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="conference-panel mt-4">
+        <h3 class="panel-title">Release Plan</h3>
+        <p class="text-muted mb-2">
+          We are currently organizing the challenge data package, and the official release will be provided soon. Please stay tuned.
+        </p>
+        <p class="text-muted mb-0">
+          For physiological signals, we plan to open-source the raw data. For video data, due to patient privacy constraints,
+          we will release privacy-preserving features extracted by models such as CLIP and VideoMAE.
+        </p>
+      </div>
     </div>
   </section>
 
-  <section id="metrics" class="section-space">
+  <section id="registration" class="section-space">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="section-heading">Evaluation Metrics</h2>
-        <p class="section-lead">Task-specific and clinically motivated metrics.</p>
+        <h2 class="section-heading">Registration &amp; Submission</h2>
+        <p class="section-lead">Participation instructions will be released soon.</p>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="conference-panel h-100">
-            <h3 class="panel-title">NMM-Basic-IED</h3>
-            <ul class="topic-list mb-0">
-              <li>Primary metric: AUPRC</li>
-              <li>Auxiliary metric: Precision@Sensitivity=70%</li>
-              <li>Focus: robust binary IED detection under severe class imbalance</li>
-            </ul>
+      <div class="conference-panel">
+        <p class="text-muted mb-0">
+          We will publish detailed tutorials, registration instructions, submission guidance, and the official participation website information in a later update. Please stay tuned.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="baseline" class="section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Baseline</h2>
+        <p class="section-lead">Baseline resources, evaluation setup, and code release status.</p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="panel-title mb-3">Evaluation Metrics</h3>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="conference-panel h-100">
+              <h3 class="panel-title">NMM-Basic-IED</h3>
+              <ul class="topic-list mb-0">
+                <li>Primary metric: AUPRC</li>
+                <li>Auxiliary metric: Precision@Sensitivity=70%</li>
+                <li>Focus: robust binary IED detection under severe class imbalance</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="conference-panel h-100">
+              <h3 class="panel-title">NMM-Context-IED</h3>
+              <ul class="topic-list mb-0">
+                <li>Primary metric: AUPRC</li>
+                <li>Auxiliary metric: Precision@Sensitivity=70%</li>
+                <li>Focus: artifact suppression with synchronized visual context features</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="conference-panel h-100">
+              <h3 class="panel-title">NMM-Source-IED</h3>
+              <ul class="topic-list mb-0">
+                <li>Primary metric: Weighted-F1</li>
+                <li>Auxiliary metric: Macro-F1</li>
+                <li>Focus: 5-class localization of epileptogenic regions</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="conference-panel h-100">
-            <h3 class="panel-title">NMM-Context-IED</h3>
-            <ul class="topic-list mb-0">
-              <li>Primary metric: AUPRC</li>
-              <li>Auxiliary metric: Precision@Sensitivity=70%</li>
-              <li>Focus: artifact suppression with synchronized visual context features</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="conference-panel h-100">
-            <h3 class="panel-title">NMM-Source-IED</h3>
-            <ul class="topic-list mb-0">
-              <li>Primary metric: Weighted-F1</li>
-              <li>Auxiliary metric: Macro-F1</li>
-              <li>Focus: 5-class localization of epileptogenic regions</li>
-            </ul>
-          </div>
-        </div>
+      </div>
+
+      <div class="conference-panel">
+        <h3 class="panel-title">Code</h3>
+        <p class="text-muted mb-0">
+          Baseline code and starter toolkit are currently under final cleanup and documentation. We will release them soon. Please stay tuned.
+        </p>
       </div>
     </div>
   </section>
@@ -274,6 +393,19 @@
             <p class="text-muted small mb-0">Guangdong Laboratory &amp; Huawei</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="references" class="section-space section-muted">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-heading">Reference</h2>
+      </div>
+      <div class="conference-panel reference-panel">
+        <p id="ref-1" class="mb-0">
+          [1] Nan Lin, Weifang Gao, Lian Li, Junhui Chen, Zi Liang, Gonglin Yuan, Heyang Sun, Qing Liu, Jianhua Chen, Liri Jin, Yan Huang, Xiangqin Zhou, Shaobo Zhang, Peng Hu, Chaoyue Dai, Haibo He, Yisu Dong, Liying Cui, Qiang Lu, <em>vEpiNet: A multimodal interictal epileptiform discharge detection method based on video and electroencephalogram data</em>, Neural Networks, Volume 175, 2024, 106319, <a href="https://doi.org/10.1016/j.neunet.2024.106319" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.neunet.2024.106319</a>
+        </p>
       </div>
     </div>
   </section>
