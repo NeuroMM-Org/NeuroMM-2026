@@ -492,6 +492,21 @@ a:focus {
   line-height: 1.35;
 }
 
+.wechat-qr-box {
+  text-align: center;
+  border-color: var(--gray-200) !important;
+}
+
+.wechat-qr {
+  width: min(220px, 100%);
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--gray-200);
+  padding: 6px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
 footer {
   border-top: 1px solid #e5e5e5;
   background: #fbfbfb;
@@ -562,6 +577,10 @@ footer {
   .committee-grid {
     --bs-gutter-x: 0.7rem;
     --bs-gutter-y: 1rem;
+  }
+
+  .wechat-qr {
+    width: min(180px, 100%);
   }
 
   .timeline-wrapper {
