@@ -473,6 +473,20 @@
     © 2026 NeuroMM Grand Challenge
   </footer>
 
+  <div class="modal fade qr-modal" id="wechatQrModal" tabindex="-1" aria-labelledby="wechatQrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 bg-transparent shadow-none">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title visually-hidden" id="wechatQrModalLabel">NeuroMM WeChat Group QR Code</h5>
+          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0 text-center">
+          <img id="wechatQrModalImage" src="" class="qr-modal-img" alt="Enlarged WeChat group QR code">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
     (function () {
@@ -525,8 +539,32 @@
         });
       }
 
+      function initQrPreview() {
+        var qrThumb = document.querySelector(".wechat-qr");
+        var modalEl = document.getElementById("wechatQrModal");
+        var modalImage = document.getElementById("wechatQrModalImage");
+        if (!qrThumb || !modalEl || !modalImage || typeof bootstrap === "undefined") return;
+
+        function openQrModal() {
+          modalImage.src = qrThumb.getAttribute("src");
+          modalImage.alt = qrThumb.getAttribute("alt") || "Enlarged WeChat group QR code";
+          bootstrap.Modal.getOrCreateInstance(modalEl).show();
+        }
+
+        qrThumb.setAttribute("role", "button");
+        qrThumb.setAttribute("tabindex", "0");
+        qrThumb.addEventListener("click", openQrModal);
+        qrThumb.addEventListener("keydown", function (event) {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openQrModal();
+          }
+        });
+      }
+
       updateNavbarState();
       initSectionSpy();
+      initQrPreview();
 
       window.addEventListener("scroll", updateNavbarState);
       window.addEventListener("resize", updateNavbarState);
