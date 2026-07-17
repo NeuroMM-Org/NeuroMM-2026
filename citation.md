@@ -94,6 +94,13 @@
   organization={IEEE}
 }
 
+@article{ning2026refed,
+  title={REFED: a subject real-time dynamic labeled EEG-fNIRS synchronized recorded emotion dataset},
+  author={Ning, Xiaojun and Wang, Jing and Feng, Zhiyang and Xin, Tianzuo and Zhang, Shuo and Zhang, Shaoqi and Lian, Zheng and Ding, Yi and Lin, Youfang and Jia, Ziyu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  year={2026}
+}
 
 【性格评估】
 @inproceedings{zhang2025assessing,
@@ -154,6 +161,39 @@
   pages={1801--1809},
   year={2026}
 }
+
+@inproceedings{ni2025face,
+  title={Face Video Steganography for Privacy-protection Automatic Depression Assessment},
+  author={Ni, Xinyi and Wu, Zijian and Liu, Lu and Song, Siyang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={80--86},
+  year={2025}
+}
+
+【Facial Reaction Generation】
+@article{song2026react,
+  title={REACT 2026: The Fourth Multiple Appropriate Facial Reaction Generation Challenge: Personalised MAFRG and Appropriate EEG Reaction Prediction},
+  author={Song, Siyang and Spitale, Micol and Wu, Zijian and Kong, Xiangyu and Luo, Cheng and Palmero, Cristina and Barquero, German and Escalera, Sergio and Valstar, Michel and Daoudi, Mohamed and others},
+  journal={arXiv preprint arXiv:2606.07935},
+  year={2026}
+}
+
+@article{xu2026reversible,
+  title={Reversible graph neural network-based reaction distribution learning for multiple appropriate facial reactions generation},
+  author={Xu, Tong and Spitale, Micol and Tang, Hao and Liu, Lu and Gunes, Hatice and Song, Siyang},
+  journal={IEEE Transactions on Affective Computing},
+  year={2026},
+  publisher={IEEE}
+}
+
+@inproceedings{luo2026mreactor,
+  title={MReactor: Offline Multiple Appropriate Facial Reaction Generation with Hierarchical Cognitive Disentanglement},
+  author={Luo, Jiachen and He, Jiajun and Shen, Shuai and Wang, Lin and Phan, Huy and Reiss, Joshua and Haijun, Lin and Schuller, Bjoern and Fu, Zeyu and Song, Siyang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3354--3363},
+  year={2026}
+}
+
 
 
 【语音情感识别】
@@ -286,5 +326,12 @@
   title={MER 2026: From Discriminative Emotion Recognition to Generative Emotion Understanding},
   author={Lian, Zheng and Peng, Xiaojiang and Xu, Kele and Jia, Ziyu and Che, Xinyi and Cheng, Zebang and Ma, Fei and Cui, Laizhong and Zhang, Yazhou and Liu, Xin and others},
   journal={arXiv preprint arXiv:2604.19417},
+  year={2026}
+}
+
+@article{chen2026meco,
+  title={MECO: A Multimodal Dataset for Emotion and Cognitive Understanding in Older Adults},
+  author={Chen, Hongbin and Li, Jie and Wang, Wei and Song, Siyang and Gu, Xiao and Li, Jianqing and Xiang, Wentao},
+  journal={arXiv preprint arXiv:2604.03050},
   year={2026}
 }
