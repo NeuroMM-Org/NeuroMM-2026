@@ -156,7 +156,6 @@
 }
 
 
-<!-- 
 【语音情感识别】
 @article{li2025low,
   title={Low-rank joint distribution adaptation for cross-corpus speech emotion recognition},
@@ -201,8 +200,59 @@
   pages={1--5},
   year={2025},
   organization={IEEE}
+}
 
-} -->
+【生成式情感与数字人】
+@article{ma2025generative,
+  title={Generative technology for human emotion recognition: A scoping review},
+  author={Ma, Fei and Yuan, Yucheng and Xie, Yifan and Ren, Hongwei and Liu, Ivan and He, Ying and Ren, Fuji and Yu, Fei Richard and Ni, Shiguang},
+  journal={Information Fusion},
+  volume={115},
+  pages={102753},
+  year={2025},
+  month={Mar},
+  publisher={Elsevier BV},
+  doi={10.1016/j.inffus.2024.102753}
+}
+
+@article{ma2025reviewemotion,
+  title={A Review of Human Emotion Synthesis Based on Generative Technology},
+  author={Ma, Fei and Xie, Yifan and Li, Yukan and He, Ying and Zhang, Yi and Ren, Hongwei and Liu, Zhou and Yao, Wei and Ren, Fuji and Yu, Fei Richard and Ni, Shiguang},
+  journal={IEEE Transactions on Affective Computing},
+  volume={16},
+  number={4},
+  pages={2579--2598},
+  year={2025},
+  month={Oct},
+  publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+  doi={10.1109/TAFFC.2025.3573878}
+}
+
+@article{xue2025humanmotion,
+  title={Human Motion Video Generation: A Survey},
+  author={Xue, Haiwei and Luo, Xiangyang and Hu, Zhanghao and Zhang, Xin and Xiang, Xunzhi and Dai, Yuqin and Liu, Jianzhuang and Zhang, Zhensong and Li, Minglei and Yang, Jian and Ma, Fei and Wu, Zhiyong and Yang, Changpeng and Dai, Zonghong and Yu, Fei Richard},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={47},
+  number={11},
+  pages={10709--10730},
+  year={2025},
+  month={Nov},
+  publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+  doi={10.1109/TPAMI.2025.3594034}
+}
+
+@article{xie2025pointtalk,
+  title={PointTalk: Audio-Driven Dynamic Lip Point Cloud for 3D Gaussian-based Talking Head Synthesis},
+  author={Xie, Yifan and Feng, Tao and Zhang, Xin and Luo, Xiangyang and Guo, Zixuan and Yu, Weijiang and Chang, Heng and Ma, Fei and Yu, Fei Richard},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={8},
+  pages={8753--8761},
+  year={2025},
+  month={Apr},
+  publisher={Association for the Advancement of Artificial Intelligence (AAAI)},
+  doi={10.1609/aaai.v39i8.32946}
+}
 
 
 【情感识别】
@@ -238,4 +288,3 @@
   journal={arXiv preprint arXiv:2604.19417},
   year={2026}
 }
-
