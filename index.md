@@ -125,7 +125,7 @@ Beyond epilepsy detection, NeuroMM aims to establish an ongoing ecosystem coveri
 - **Apr 20, 2026**: Data, baseline paper and baseline code available.
 - **Jun 20, 2026**: Result submission starts.
 - **Jul 1, 2026**: Result submission deadline.
-- **Jul 12, 2026**: Paper submission deadline.
+- **Jul 23, 2026**: Paper submission deadline.
 - **Aug 5, 2026**: Paper acceptance notification.
 - **Aug 19, 2026**: Camera-ready deadline.
 
