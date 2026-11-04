@@ -222,24 +222,93 @@
   border-radius: 8px;
 }
 
-.schedule-talk {
-  margin-top: 1.5rem;
+.schedule-keynote-detailed {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background: var(--panel-bg);
 }
 
-.schedule-talk h4 {
+.schedule-keynote-detailed > .schedule-time {
+  padding-top: 0.1rem;
+}
+
+.schedule-keynote-details {
+  min-width: 0;
+}
+
+.schedule-talk-header .schedule-kind {
+  margin-bottom: 0.85rem;
+  color: var(--accent-500);
+  letter-spacing: 0.16em;
+}
+
+.schedule-keynote .schedule-talk-title {
+  max-width: 28ch;
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6;
-  overflow-wrap: anywhere;
+  font-size: clamp(1.65rem, 2.7vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  overflow-wrap: normal;
 }
 
-.schedule-talk p {
-  margin: 0.75rem 0 0;
+.schedule-talk-body {
+  display: grid;
+  grid-template-columns: 172px minmax(0, 1fr);
+  gap: 2.25rem;
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line-200);
+}
+
+.schedule-talk-speaker .schedule-portrait {
+  display: block;
+  width: 120px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.schedule-speaker-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.schedule-speaker-affiliation {
+  margin: 0.45rem 0 0;
+  color: var(--ink-700);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.schedule-abstract h4 {
+  margin: 0 0 1rem;
+  color: var(--accent-500);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.schedule-abstract p {
+  max-width: 68ch;
+  margin: 0;
   color: var(--ink-700);
   font-size: 1rem;
   line-height: 1.8;
   overflow-wrap: anywhere;
+}
+
+.schedule-abstract p + p {
+  margin-top: 1rem;
+}
+
+.schedule-abstract .schedule-abstract-lead {
+  color: var(--ink-900);
 }
 
 .schedule-break {
@@ -255,6 +324,24 @@
 .schedule-source a {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+@media (max-width: 991px) {
+  .schedule-talk-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .schedule-talk-speaker {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .schedule-talk-speaker .schedule-portrait {
+    width: 80px;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -296,6 +383,21 @@
   .schedule-portrait {
     width: 72px;
   }
+
+  .schedule-keynote-detailed {
+    gap: 1.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .schedule-talk-body {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .schedule-talk-speaker {
+    gap: 1rem;
+  }
 }
 
 @media print {
@@ -323,8 +425,10 @@
   .schedule-page h1,
   .schedule-page h2,
   .schedule-page h3,
+  .schedule-page h4,
   .schedule-page p,
-  .schedule-page a {
+  .schedule-page a,
+  .schedule-abstract .schedule-abstract-lead {
     color: #172235;
   }
 
