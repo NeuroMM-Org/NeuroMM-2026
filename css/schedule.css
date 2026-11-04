@@ -243,7 +243,6 @@
 }
 
 .schedule-keynote .schedule-talk-title {
-  max-width: 28ch;
   margin: 0;
   font-size: clamp(1.65rem, 2.7vw, 2.25rem);
   font-weight: 400;
