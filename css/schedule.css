@@ -222,6 +222,26 @@
   border-radius: 8px;
 }
 
+.schedule-talk {
+  margin-top: 1.5rem;
+}
+
+.schedule-talk h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.schedule-talk p {
+  margin: 0.75rem 0 0;
+  color: var(--ink-700);
+  font-size: 1rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
 .schedule-break {
   background: var(--panel-soft);
 }
